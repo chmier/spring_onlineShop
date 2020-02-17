@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form method="POST" th:action="@{/orders}" th:object="${order}">
+    <h1> Zamów swoje meble!</h1>
+
+    <h3>Adres dostarczenia...</h3>
+    <label for="name">Imie</label>
+    <input type="text" th:field="*{name}"/>
+
+    <label for="lastname">Nazwisko</label>
+    <input type="text" th:field="*{name}"/>
+
+    <label for="street">Ulica</label>
+    <input type="text" th:field="*{street}"/>
+
+    <label for="city">Ulica</label>
+    <input type="text" th:field="*{city}"/>
+
+    <label for="zip">kod pocztowy</label>
+    <input type="text" th:field="*{zip}"/>
+    <span class="ValidationError"
+          th:if="${#fields.hasErrors('zip')}"
+          th:errors="*{zip}">Błąd kodu</span>
+
+    <input type="submit" value="Submit order"/>
+
+</form>
+
+
+</body>
+</html>

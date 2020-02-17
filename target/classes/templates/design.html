@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Przygotuj własne zamówienie</h1>
+<form method="POST" th:object="${design}">
+    <div>
+        <div class="furnitures-group" id="chairs">
+            <h3>Chose chair color:</h3>
+            <div th:each="furniture : ${chairs}">
+                <input name="furnitures" type="checkbox" th:value="${furniture.id}"/>
+                <span th:text="${furniture.name}">Furniture</span></br>
+            </div>
+
+        </div>
+        <div class="furniture-group" id="tables">
+            <h3>Choose table color:</h3>
+            <div th:each="furniture : ${tables}">
+            <input name="furnitures" type="checkbox" th:value="${furniture.id}"/>
+            <span th:text="${furniture.name}">Furniture</span></br>
+            </div>
+        </div>
+    </div>
+
+    <h3> Podaj nazwe swojej kategorii</h3>
+    <input type="text" th:field="*{name}">
+
+    <input type="submit" value="Submit order"/>
+</form>
+</body>
+</html>

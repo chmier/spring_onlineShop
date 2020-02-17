@@ -1,0 +1,7 @@
+com\example\projektKoncowy\model\UserForm.class
+com\example\projektKoncowy\model\Orders.class
+com\example\projektKoncowy\repository\RoleRepository.class
+com\example\projektKoncowy\model\User.class
+com\example\projektKoncowy\repository\UserRepository.class
+com\example\projektKoncowy\ProjektKoncowyApplication.class
+com\example\projektKoncowy\model\Role.class
