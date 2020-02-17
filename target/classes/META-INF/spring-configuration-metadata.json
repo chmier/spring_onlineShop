@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "users",
+      "type": "com.example.projektKoncowy.configuration.UserConfiguration",
+      "sourceType": "com.example.projektKoncowy.configuration.UserConfiguration"
+    }
+  ],
+  "properties": [
+    {
+      "name": "users.passwords",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.example.projektKoncowy.configuration.UserConfiguration"
+    },
+    {
+      "name": "users.usernames",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.example.projektKoncowy.configuration.UserConfiguration"
+    }
+  ],
+  "hints": []
+}

@@ -44,7 +44,7 @@ public class FurnitureController {
     @PostMapping
     public String processDesign(@Valid Category category, Errors errors){
         if(errors.hasErrors()){
-            return "design";
+            return "design ";
         }
         log.info("Procesing design: " + category);
         return "redirect:/orders/current";

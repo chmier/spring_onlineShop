@@ -16,7 +16,6 @@ public class Category {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-
     @NotNull
     @Size(min = 5, message = "Name must not be null")
     private String Name;
